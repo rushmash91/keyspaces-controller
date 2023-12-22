@@ -1,0 +1,8 @@
+kind: Keyspace
+apiVersion: keyspaces.services.k8s.aws/v1alpha1
+metadata:
+  name: $KEYSPACE_NAME
+spec:
+  keyspaceName: $KEYSPACE_NAME
+  replicationSpecification:
+    replicationStrategy: "SINGLE_REGION"
